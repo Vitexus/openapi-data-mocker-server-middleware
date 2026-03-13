@@ -1,0 +1,22 @@
+Source: php-ybelenko-openapi-data-mocker-server-middleware
+Section: php
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends:
+ debhelper-compat (= 13)
+Standards-Version: 4.7.0
+Homepage: https://github.com/ybelenko/openapi-data-mocker-server-middleware
+Rules-Requires-Root: no
+
+Package: php-ybelenko-openapi-data-mocker-server-middleware
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ ${misc:Depends},
+ php-psr-http-factory,
+ php-psr-http-server-middleware,
+ php-ybelenko-openapi-data-mocker-interfaces
+Description: PSR-15 OpenAPI mock response middleware
+ PSR-15 HTTP Server Middleware to create mock responses from
+ OpenAPI Schemas (OAS 3.0). Creates fake API responses based
+ on your OpenAPI specification.
